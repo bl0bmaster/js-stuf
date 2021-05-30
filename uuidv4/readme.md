@@ -11,3 +11,6 @@ Ces uuid sont uniquement consitués de valeurs aléatoires.
     - La norme est respectée.
     - Une attention a été portée à la vitesse d'exécution
 
+## Dépôt
+    
+https://github.com/bl0bmaster/js-stuff/tree/master/uuidv4
