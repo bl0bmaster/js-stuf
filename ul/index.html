@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="ul.js"></script>
+
+<script>
+function tr() {
+    return ul({parentTag : "tr",childTag : "td"});
+}
+function init(){
+    const parent = ul();
+    parent("Cette liste");
+    parent("Contient un tableau");
+    const table = ul({
+        parentTag : "table",
+        childTag : "tbody"
+    });
+    parent(
+        table(  tr()("A1")("A2")("A3"))
+             (  tr()("B1")("B2")("B3"))
+             ()
+    );
+    document.documentElement.appendChild(parent());
+}
+</script>
+</head><body onload="init()">
+
+
+</body>
